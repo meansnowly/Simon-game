@@ -8,14 +8,16 @@ var started = false;
 var level = 0;
 
 /* ส่วนรับค่า (click หรือ กด any key) */
+
+// $(document).click(function() {
+//   if (!started) {
+//     $("#level-title").text("Level " + level);
+//     nextSequence();
+//     started = true;
+//   }
+// });
+
 $(document).keypress(function() {
-  if (!started) {
-    $("#level-title").text("Level " + level);
-    nextSequence();
-    started = true;
-  }
-});
-$(document).click(function() {
   if (!started) {
     $("#level-title").text("Level " + level);
     nextSequence();
